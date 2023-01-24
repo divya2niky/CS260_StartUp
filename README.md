@@ -1,3 +1,5 @@
 # CS260_StartUp
 # This is my comment for GitHub assignment
-# Modiyfying the README file and commiting the changes
+# Modiyfying the read document
+# Changing the same line in github
+  
