@@ -1,3 +1,5 @@
-# CS260_StartUp
-# This is my comment for GitHub assignment
-# I never had merge conflict so its interesting to learn how to resolve that issue.   
+# Personal portfolio
+##Design
+###Elevator pitch
+![This is an image](D:\CS_260\CS260_StartUp_New\start_up.jpeg)
+
