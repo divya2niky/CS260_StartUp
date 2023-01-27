@@ -3,5 +3,6 @@
 
 Elevator pitch
 
-![This is an image](/WhatsApp Image 2023-01-27 at 12.19.44 PM.jpeg)
+![This is an image](/startup_image.jpeg)
 
+<img   src="startup_image.jpeg"   alt="Alt text"  title="Optional title"   style="display: inline-block; transform: rotate(90deg);margin: 0 auto; max-width: 100px">
