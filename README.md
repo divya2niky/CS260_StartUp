@@ -3,5 +3,5 @@
 
 Elevator pitch
 
-![This is an image](D:\CS_260\CS260_StartUp_New\start_up_updated.jpg)
+![This is an image](WhatsApp Image 2023-01-27 at 12.19.44 PM.jpeg)
 
