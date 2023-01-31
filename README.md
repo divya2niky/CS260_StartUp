@@ -13,3 +13,8 @@ Key features
 5. Ability to send a message directly 
 6. Ability to access the github repo for the projects
 7. Ability for the admin to create or delete questions. 
+
+
+#AWS
+Th IP address is 18.188.206.129
+Command to remote shell my server: ssh -i [key pair file] ubuntu@[ip address]
