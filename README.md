@@ -16,5 +16,5 @@ Key features
 
 
 #AWS
-Th IP address is 18.188.206.129
+Th IP address is 3.14.75.37
 Command to remote shell my server: ssh -i [key pair file] ubuntu@[ip address]
