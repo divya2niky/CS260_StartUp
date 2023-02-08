@@ -22,3 +22,7 @@ Command to remote shell my server: ssh -i [key pair file] ubuntu@[ip address]
 
 port: webprogramming260.link
 domain : startup.webprogramming260.link
+
+
+Simon project assignment:
+I learned how to use basic HTML elements for structure,input, output, drawing and for hyperlink.
