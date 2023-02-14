@@ -1,0 +1,27 @@
+* {
+    border: thick solid blue;
+    box-sizing: border-box;
+    padding: 0.2em;
+    font-size: 24px;
+    font-family: Arial;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  p {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
