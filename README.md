@@ -24,5 +24,9 @@ port: webprogramming260.link
 domain : startup.webprogramming260.link
 
 
-Simon project assignment:
+Simon HTML project assignment:
 I learned how to use basic HTML elements for structure,input, output, drawing and for hyperlink.
+
+
+Simon CSS project assignment notes:
+I learned how to make my application visually appealing by adding user interface elements using CSS framework.
