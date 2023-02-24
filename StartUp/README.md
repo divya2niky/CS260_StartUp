@@ -30,3 +30,14 @@ I learned how to use basic HTML elements for structure,input, output, drawing an
 
 Simon CSS project assignment notes:
 I learned how to make my application visually appealing by adding user interface elements using CSS framework.
+
+
+
+Startup Project notes:
+
+I have leared so many new things while working on this project. While I refered to the Simon assignment but I relied a lot on google to get some tips and tricks to get a good portfolio. 
+My first learning was :
+1. Using ::before,::after that allows me to insert contet onto a page without it needing to be in the HTML.
+2. Putting all the colors by giving a name for each color in a different file.This helped me to take colors from that file instead of giving numbers. 
+3. I have learned how I can used the margin top and margin bottom for the dimensions.
+4. I learned how to breakdown my page as per design. It was a lot but a learning experiance on how I can work on small things and to get big picture. 
