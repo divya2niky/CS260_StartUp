@@ -4,7 +4,7 @@
 body{
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' ,sans-serif;
+    font-family: 'Poppins' sans-serif;
 }
 
 *{
@@ -60,8 +60,47 @@ ul{
 {
     padding-top: 60px;
     padding-bottom: 70px;
+}
+
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%; 
+    margin-bottom: 60px;
+}
+
+.section-title h2
+{
+    font-size: 40px;
+    color: #302e4d;
+    font-weight: 700px;
+    position: relative;
+}
+
+.section-title h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 
 }
+
 
 .row{
     display: flex;
@@ -320,4 +359,137 @@ h3.my-profession
     margin: auto;
     border-radius: 5px;
     height: 400px;
+}
+
+/* About */
+.about .about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%; 
+}
+
+
+.about .about-content .about-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #302e4d; 
+}
+
+.about .about-content .about-text h3 span
+{
+    color: var(--skin-color);
+}
+
+.about .about-content .about-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: #504e70;
+}
+
+.about .about-content .personal-info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px; 
+    color: #302e4d;
+    border-bottom: 1px solid #e8dfec;
+}
+
+.about .about-content .personal-info .info-item p span
+{
+    font-weight: 400;
+    color: #302e4d;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons
+{
+    margin-top: 30px;
+}
+
+
+.about .about-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+    margin-top: 10px;
+
+}
+
+.about .about-content .skills
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .skills .skill-item h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #302e4d;
+    text-transform: capitalize;
+}
+
+.about .about-content .skills .skill-item .progress
+{
+    background-color: #e8dfec;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .skills .skill-item
+{
+    margin-bottom: 25px;
+}
+
+.about .about-content .skills .skill-item .progress .progress-in
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+
+.about .about-content .skills .skill-item .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: #302e4d;
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
 }
