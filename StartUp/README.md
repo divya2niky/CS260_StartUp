@@ -44,3 +44,6 @@ My first learning was :
 5. I learned to use how to use the hover button for my "Hire Me" button. 
 6. I learned to use "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" for my stylesheets. I learned how to code icons for my side bars.
 4. I learned how to breakdown my page as per design. It was a lot but a learning experiance on how I can work on small things and to get big picture. 
+
+Simon JS project assignment:
+One interesting thing I learned is that JS cuts down on time that is needed ofr the compilation like Java. The important learning I had was doing the login. It was pretty simple and easy to understand. Another one was how to use async, functions, constructors on the website. 
