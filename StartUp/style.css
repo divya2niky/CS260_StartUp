@@ -21,7 +21,7 @@ body{
     box-sizing: border-box;
 }
 
-::before,::after /*allows me to insert contet onto a page without it needing to be in the HTML*/
+::before,::after /*allows me to insert content onto a page without it needing to be in the HTML*/
 
 {
     box-sizing: border-box;
@@ -182,6 +182,7 @@ ul{
     font-size: 40px;
 }
 
+/* can remove this */
 .aside .logo a::before
 {
     content: '';
@@ -194,7 +195,7 @@ ul{
     left: 0;
 }
 
-
+/*can remove this*/
 .aside .logo a::after
 {
     content: '';
@@ -669,4 +670,45 @@ h3.my-profession
     font-size: 16px;
     color: #504e70;
     line-height: 25px;
+}
+
+/*portfolio*/
+
+.portfolio .container
+{
+    padding-bottom: 40px;
+}
+
+.portfolio .portfolio-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2
+{
+    color: var(#302e4d);
+    font-weight: 500;
+}
+
+.portfolio .portfolio-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item-inner
+{
+    border: 6px solid var(#fdf9ff);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img{
+    width: 100%;
+    display : block;
+
 }
