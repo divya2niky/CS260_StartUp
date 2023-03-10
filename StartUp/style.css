@@ -44,11 +44,12 @@ ul{
 }
 
 footer {
+    width: 100%;
     flex: 0 30px;
   }
 
 footer a {
-    float: bottom;
+    float: right;
   }
 
 @media (max-height: 500px) {
@@ -59,6 +60,14 @@ footer a {
     main {
         flex: 1 100vh;
       }
+  }
+
+  .container-fluid
+  {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
   }
 
 .section
@@ -210,7 +219,7 @@ footer a {
     font-size: 40px;
 }
 
-/* can remove this */
+/* can remove this 
 .aside .logo a::before
 {
     content: '';
@@ -223,7 +232,7 @@ footer a {
     left: 0;
 }
 
-/*can remove this*/
+
 .aside .logo a::after
 {
     content: '';
@@ -235,6 +244,7 @@ footer a {
     top: 0;
     right: 0;
 }
+*/
 
 .aside .nav-toggler
 {
@@ -370,7 +380,7 @@ h3.my-profession
     text-align: center;
     position: relative;
 }
-
+/*
 .home-img::after
 {
    content: '';
@@ -396,6 +406,7 @@ h3.my-profession
    top: -40px;
 
 }
+*/
 .home .home-img img{
     margin: auto;
     border-radius: 5px;
