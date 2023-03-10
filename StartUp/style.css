@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root{
@@ -42,15 +43,31 @@ ul{
     list-style: none;
 }
 
+footer {
+    flex: 0 30px;
+  }
 
+footer a {
+    float: bottom;
+  }
+
+@media (max-height: 500px) {
+  
+    footer {
+      display: none;
+    }
+    main {
+        flex: 1 100vh;
+      }
+  }
 
 .section
 {
-    background: #f2f2fc;
+    background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
-    opacity: 1;
+    
 }
 
 .hidden
@@ -89,7 +106,7 @@ ul{
 .section-title h2
 {
     font-size: 40px;
-    color: #302e4d;
+    color: var(--text-black-900);
     font-weight: 700px;
     position: relative;
 }
@@ -155,13 +172,13 @@ ul{
 .aside
 {
     width: 270px;
-    background: #fdf9ff;
+    background: var(--bg-black-100);
     position: fixed;
     left: 0;
     top: 0;
     padding: 30px;
     height: 100%;
-    border-right: 1px solid #e8dfec;
+    border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +195,7 @@ ul{
 
 .aside .logo a
 {
-    color: #302e4d;
+    color: var(--text-black-900);
     font-weight: 700;
     padding: 15px 20px;
     font-size: 30px;
@@ -223,13 +240,13 @@ ul{
 {
     height : 40px;
     width: 45px;
-    border: 1px solid #e8dfec; 
+    border: 1px solid var(--bg-black-50); 
     cursor: pointer;
     position: fixed;
     left: 300px;
     top: 20px;
     border-radius: 5px;
-    background: #fdf9ff;
+    background: var(--bg-black-100);
     display: none;
     align-items: center;
     justify-content: center;
@@ -283,8 +300,8 @@ ul{
     font-size: 16px;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid #e8dfec;
-    color: #302e4d;
+    border-bottom: 1px solid (--bg-black-50);
+    color: (--text-black-900);
     padding: 5px 15px;
 }
 
@@ -344,7 +361,7 @@ h3.my-profession
 {
     margin-bottom: 70px;
     font-size: 20px;
-    color: #504e70;
+    color: (--text-black-700);
 }
 .home .home-img
 {
@@ -404,7 +421,7 @@ h3.my-profession
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
-    color: #302e4d; 
+    color: var(--text-black-900); 
 }
 
 .about .about-content .about-text h3 span
@@ -416,7 +433,7 @@ h3.my-profession
 {
     font-size: 16px;
     line-height: 25px;
-    color: #504e70;
+    color: var(--text-black-700);
 }
 
 .about .about-content .personal-info
@@ -437,14 +454,14 @@ h3.my-profession
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px; 
-    color: #302e4d;
+    color: var(--text-black-900);
     border-bottom: 1px solid #e8dfec;
 }
 
 .about .about-content .personal-info .info-item p span
 {
     font-weight: 400;
-    color: #302e4d;
+    color: var(--text-black-900);
     margin-left: 4px;
     display: inline-block;
 }
@@ -480,13 +497,13 @@ h3.my-profession
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
-    color: #302e4d;
+    color: var(--text-black-900);
     text-transform: capitalize;
 }
 
 .about .about-content .skills .skill-item .progress
 {
-    background-color: #e8dfec;
+    background-color: var(--bg-black-50);
     height: 7px;
     border-radius: 4px;
     width: 100%;
@@ -512,7 +529,7 @@ h3.my-profession
 {
     position: absolute;
     right: 0;
-    color: #302e4d;
+    color: var(--text-black-900);
     top: -40px;
     font-weight: 400;
     line-height: 40px;
@@ -531,7 +548,7 @@ h3.my-profession
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 700;
-    color: #302e4d;
+    color: var(--text-black-900)
 }
 
 .about .about-content .timeline-box{
@@ -541,9 +558,9 @@ h3.my-profession
 
 .about .about-content .timeline
 {
-    background-color: #fdf9ff;
+    background-color: var(--bg-black-100);
     padding: 30px 15px;
-    border: 1px solid #e8dfec;
+    border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     width: 100%;
     position: relative;
@@ -588,7 +605,7 @@ h3.my-profession
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
-    color: #504e70;
+    color: var(--text-black-700);
 }
 
 .about .about-content .timeline .timeline-date .fa 
@@ -602,7 +619,7 @@ h3.my-profession
     font-size: 18px;
     margin-bottom: 15px;
     text-transform: capitalize;
-    color: #302e4d;
+    color: var(--text-black-900);
 }
 
 .about .about-content .timeline .timeline-text
@@ -610,7 +627,7 @@ h3.my-profession
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
-    color: #504e70;
+    color: var(--text-black-700);
 }
 
 /* service */
@@ -626,8 +643,8 @@ h3.my-profession
 
 .service .service-item .service-item-inner
 {
-    background-color: #fdf9ff;
-    border: 1px solid #e8dfec;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
@@ -672,14 +689,14 @@ h3.my-profession
 {
     font-size: 18px;
     margin-bottom: 15px;
-    color:  #302e4d;
+    color:  var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
 }
 
 .service .service-item .service-item-inner p{
     font-size: 16px;
-    color: #504e70;
+    color: var(--text-black-700);
     line-height: 25px;
 }
 
@@ -699,7 +716,7 @@ h3.my-profession
 
 .portfolio .portfolio-heading h2
 {
-    color: var(#302e4d);
+    color: var(--bg-black-900);
     font-weight: 500;
 }
 
@@ -712,7 +729,7 @@ h3.my-profession
 
 .portfolio .portfolio-item-inner
 {
-    border: 6px solid var(#fdf9ff);
+    border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -735,7 +752,7 @@ h3.my-profession
 
 .contact-sub-title
 {
-    color: #302e4d;
+    color: var(--text-black-900);
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
@@ -750,7 +767,7 @@ h3.my-profession
 }
 .contact-sub-title
 {
-    color: #f2f2fc;
+    color: var(--bg-black-900);
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
@@ -775,7 +792,7 @@ h3.my-profession
 {
     font-size: 18px;
     font-weight: 700;
-    color:  #302e4d;
+    color:  var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
@@ -783,7 +800,7 @@ h3.my-profession
 {
     font-size: 16px;
     line-height: 25px;
-    color: #504e70;
+    color: var(--text-black-700);
     font-weight: 400;
 }
 .contact .contact-form
@@ -810,11 +827,11 @@ h3.my-profession
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    background: #fdf9ff;
-    border: 1px solid #e8dfec;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
     font-size: 16px;
-    color: #504e70;
+    color: var(--text-black-700);
     transition: all 0.3s ease;
 }
 .contact .contact-form .form-item .form-control:focus
@@ -890,3 +907,6 @@ h3.my-profession
         max-width: 100%;
     }
 }
+
+
+

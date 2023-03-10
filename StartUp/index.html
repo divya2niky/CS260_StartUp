@@ -33,18 +33,18 @@
                 <span> </span>
             </div>
                 <ul class ="nav">
-                    <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                    <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                    <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-                    <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
                 </ul>
             </div>
             <!--Aside End-->
             <!--Main Content Start-->
             <div class = "main-content"></div>
             <!--Home section start-->
-                <section class="home section">
+                <section class="home section" id="home">
                     <div class = "container">
                         <div class = "row">
                             <div class = "home-info padd-15">
@@ -63,7 +63,7 @@
                 </section>
             <!--Home section end-->
             <!--About section start-->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class = "container">
                     <div class = "row">
                         <div class="section-title padd-15">
@@ -223,7 +223,7 @@
             </section>
             <!--About section end-->
             <!--Service Section Start-->
-            <section class = "service section">
+            <section class = "service section" id="services">
                 <div class = "container">
                     <div class = "row">
                         <div class = "section-title padd-15"> <!--can delete this-->
@@ -281,7 +281,7 @@
             <!--Service Section End-->
 
             <!--Portfolio Section Start-->
-            <section class = "portfolio section">
+            <section class = "portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class = "section-title padd-15">
@@ -361,8 +361,8 @@
                     </div>
                     <!-- ===== Contact info item end ====== -->
                   </div>
-                  <h3 class="contact-title padd-15">Email Me</h3>
-                  <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+                  <h3 class="contact-title padd-15">Send me an message</h3>
+                
                   <!-- ====== Contact Form ====== -->
                   <div class="row">
                     <div class="contact-form padd-15">
@@ -410,6 +410,8 @@
         </div>
 
         <!--**Main Container End**-->
+
+      
          <!-- ===== Style Switcher Start ===== -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
@@ -427,13 +429,22 @@
         <span class="color-5" onclick="setActiveStyle('color-5')"></span>
     </div>
   </div>
+  <footer>
+    <div class="container-fluid">
+      <span class="text-reset">Author Name(s)</span>
+      <a class="text-reset"
+        href="https://github.com/divya2niky/CS260_StartUp.git"
+        >Source</a>
+    </div>
+  </footer>
   <!-- ===== Style Switcher End ===== -->
   <!--JS files-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
         <script src = "script.js"></script>
         <script src = "style-switcher.js"></script>
-
+       
 
     </body>
+   
 
 </html>
