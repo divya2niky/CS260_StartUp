@@ -26,6 +26,9 @@
         <main>
         <div class="main-container">
             <!--Aside Start-->
+
+            <button onclick= openMenu()
+            class = "button"> Hide Menu</button>
             <div class="aside">
                 <div class ="logo">
                     <a > Portfolio</a>
@@ -445,6 +448,24 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
         <script src = "script.js"></script>
         <script src = "style-switcher.js"></script>
+        <script>
+        let open=false;
+        function openMenu(){
+            if(open){
+                open=false;
+            }
+            else{
+                open=true;
+            }
+            const sidebarMenu = document.querySelector(".aside");
+            if(open){
+                sidebarMenu.style.display = "flex";
+            }
+            else{
+                sidebarMenu.style.display = "none";
+            }
+            
+        }</script>
        
 
     </body>
