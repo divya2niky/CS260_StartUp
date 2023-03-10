@@ -47,3 +47,14 @@ My first learning was :
 
 Simon JS project assignment:
 One interesting thing I learned is that JS cuts down on time that is needed ofr the compilation like Java. The important learning I had was doing the login. It was pretty simple and easy to understand. Another one was how to use async, functions, constructors on the website. 
+
+
+Startup Project notes:
+
+My first learning for this assignment is to have patience. While I had so many ideas to implement in my portfolio, I had to choose the things that makes my project work better.
+1. I struggled with JS functions in this project.I got a good practice on addEventListener() for switching the colors in the portfolio.
+2. Making sure I name my classes that make sense. Which eventually helped to style the class and use it in JS. 
+3. This time I used the "inspect" option on the website to make changes idententations. That was pretty cool.
+4. I learned that I can hide style switcher on scroll. Which means when I click the settings button, the colors pop out and when I scroll down the page the colors pop hides. I was able to do this using window.addEventListener() 
+5. I learned that document and window are different objects and they some different events. Using addEventListener() on them listens to events destined for a different object. Like, there is a "resize" event on the window object that is not on the document object. 
+6. 
