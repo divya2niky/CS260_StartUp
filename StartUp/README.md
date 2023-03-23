@@ -57,4 +57,10 @@ My first learning for this assignment is to have patience. While I had so many i
 3. This time I used the "inspect" option on the website to make changes idententations. That was pretty cool.
 4. I learned that I can hide style switcher on scroll. Which means when I click the settings button, the colors pop out and when I scroll down the page the colors pop hides. I was able to do this using window.addEventListener() 
 5. I learned that document and window are different objects and they some different events. Using addEventListener() on them listens to events destined for a different object. Like, there is a "resize" event on the window object that is not on the document object. 
-6. 
+
+
+
+Simon Webservice Notes:
+As i followed the steps to convert Simon to a service. I learned how every thing fell in place like in order. Step one was to move all my files to sub folder so I can use Node.js based service to host the front-end application files. I learned that static file middleware takes care of reading front-end code from public directory and returns it to browser. Then was to make changes in my about.html and about.js to display the random quotes. Updating the scores.js file to the latest high scores from the service. I learned to use localStorage object to store the scores in case the user goes offline.
+After that part was to run commands to configure the directory to work with node.js. Installing Express to create dependency on json files and createing index.js which is the root of the project to run my app in web service. 
+Overall it was neat to use the debugger/breakpoint to check how my code is working. 
