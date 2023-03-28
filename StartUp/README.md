@@ -130,7 +130,7 @@ Overall it was neat to use the debugger/breakpoint to check how my code is worki
 
 Simon DB Notes:
 I learned how to data is stored in MongoDB and the highest scores reflecting on the list. I used mySQL before for another assignement but MongoDB is easy as it has no strict schema requirements. Each document that is updated in the collection alonst followed similar schema. The connection code to MongoDB was also striaghtforward. With the client connection I was able to get a database object and from that a collection object. The insertOne function was interesting as this method can also throw either writeError or writeConcernError exception and also be used inside multi-document transactions. By calling the   insertOne method an collection object I was able to pass the JavaScript object. I have also learned that when a document is inserted into the collection it will automatically be assigned a unique ID. Reading the credentials from environment variables for the connection string is also useful.So, I do not have to share my actual credentials. 
->>>>>>> b74d5791a06dfc1abfc9c8743c105e50dd42c24d
+
 
 
 Simon Login Notes:
