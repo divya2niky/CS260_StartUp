@@ -1,29 +1,33 @@
 <html lang="en">
 <head>
-<h1>Welcome to Divya's personal space</h1>
+    <link rel = "stylesheet" href ="login-form-style.css">
+   
+        
 </head>
 <body>
     <main>
-        <div>
-            <label>Email</label>
-            <textarea></textarea>
-        </div>
-        <div>
-            <label>Password</label>
-            <textarea></textarea>
-        </div>
-        <div>
-           <button>Login</button>
-        </div>
-        <div>
-            <button>Register</button>
-        </div>
-        <div>
-
-        </div>
+        <form>
+            <div class="loginframe">
+                <h3>Divya's Portfolio</h3>
+                <input type="email" name="email" id="email" value="Enter your email address" class="email" />
+  
+                <input type="password" name="password" id="password" value="Enter password" class="email" />
+                
+                <a href="#"><div id="btn2" onclick="newsignup()">Sign Up</div></a>    
+                <h4 id="resultheader"></h4>
+                <div>Already a member</div> 
+                <a href=""><div>Log In Here</div></a> 
+            </div>
+             
+        </form>
+       
     </main>
 </body>
+<script src = "login.js">
+    
+</script>
 </html>
+ 
 
 
 
