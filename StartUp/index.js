@@ -1,10 +1,30 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-app.use(express.json());
+
+// The service port. In production the front-end code is statically hosted by the service on the same port.
+const port = process.argv.length > 2 ? process.argv[2] : 3000;
+
+
+const corsOptions = {
+    origin: 'http://127.0.0.1:5502',
+    credentials: true
+}
+
 const { MongoClient } = require('mongodb');
 
 const cookieParser= require('cookie-parser');
 app.use(cookieParser());
+app.use(cors(corsOptions))
+app.use(express.json());
+// Serve up the front-end static content hosting
+app.use(express.static('public'));
+
+// Router for service endpoints
+const apiRouter = express.Router();
+app.use(`/api`, apiRouter);
+
+
 
 const userName = 'divya2niky';
 const password = 'divyanikitha';
@@ -46,16 +66,7 @@ app.post('/auth/login', async (req, res) => {
   res.status(401).send({ msg: 'Unauthorized' });
 });
 
-// getMe for the currently authenticated user
-app.get('/user/me', async (req, res) => {
-  authToken = req.cookies['token'];
-  const user = await collection.findOne({ token: authToken });
-  if (user) {
-    res.send({ email: user.email });
-    return;
-  }
-  res.status(401).send({ msg: 'Unauthorized' });
-});
+
 
 function getUser(email) {
   return collection.findOne({ email: email });
@@ -72,11 +83,6 @@ async function createUser(email, password) {
 
   return user;
 }
-// http://localhost:3000/
-app.get('/', function(request, response) {
-	// Render login template
-	response.sendFile(path.join(__dirname + '/login.html'));
-});
 
 
 function setAuthCookie(res, authToken) {
@@ -87,9 +93,11 @@ function setAuthCookie(res, authToken) {
   });
 }
 
-//Running the server
+// Return the application's default page if the path is unknown
+app.use((_req, res) => {
+  res.sendFile('login.html', { root: 'public' });
+});
 
-const port = 8080;
-app.listen(port, function () {
+app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
