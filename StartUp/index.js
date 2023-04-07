@@ -7,7 +7,7 @@ const cookieParser= require('cookie-parser');
 app.use(cookieParser());
 //end of wqeb socket
 const corsOptions = {
-  origin: 'https://startup.webprogramming260.link:5502',
+  origin: 'https://startup.webprogramming260.link:4000',
   credentials: true
 }
 

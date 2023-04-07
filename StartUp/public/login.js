@@ -3,7 +3,7 @@ function login(){
   var passwordvar=document.getElementById('password').value
 
     // const url = 'http://localhost:4000/auth/login'
-    const url = 'https://startup.webprogramming260.link:4000/auth/login'
+    const url = '/auth/login'
 
     
     // const customHeaders = {
@@ -30,7 +30,7 @@ function login(){
           rheader.innerHTML = "Login Failed"
         else {
           rheader.innerHTML = "Login Successful"
-          window.location.assign('https://startup.webprogramming260.link:4000/dashboard.html')
+          window.location.assign('dashboard.html')
         }
     })
     .catch(error => {
@@ -44,7 +44,7 @@ function newsignup(){
   var emailvar=document.getElementById('email').value
   var passwordvar=document.getElementById('password').value
 
-    const url = 'https://startup.webprogramming260.link:4000/auth/create'
+    const url = '/auth/create'
 
     // const customHeaders = {
     //    "Content-Type": "application/json",
