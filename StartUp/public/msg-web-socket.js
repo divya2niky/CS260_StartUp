@@ -1,4 +1,4 @@
-var sock = new WebSocket("ws://localhost:4000");
+var sock = new WebSocket("ws://startup.webprogramming260.link:4000");
 
 // sock.onmessage = function(event){
 //     console.log(event);

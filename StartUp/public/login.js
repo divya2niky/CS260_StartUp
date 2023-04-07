@@ -2,8 +2,10 @@ function login(){
   var emailvar=document.getElementById('email').value
   var passwordvar=document.getElementById('password').value
 
-    const url = 'http://localhost:4000/auth/login'
+    // const url = 'http://localhost:4000/auth/login'
+    const url = 'https://startup.webprogramming260.link:4000/auth/login'
 
+    
     // const customHeaders = {
     //    "Content-Type": "application/json",
     //     "Access-Control-Allow-Origin": "http://localhost:5502",
@@ -28,7 +30,7 @@ function login(){
           rheader.innerHTML = "Login Failed"
         else {
           rheader.innerHTML = "Login Successful"
-          window.location.assign('http://localhost:4000/dashboard.html')
+          window.location.assign('https://startup.webprogramming260.link:4000/dashboard.html')
         }
     })
     .catch(error => {
@@ -42,7 +44,7 @@ function newsignup(){
   var emailvar=document.getElementById('email').value
   var passwordvar=document.getElementById('password').value
 
-    const url = 'http://localhost:4000/auth/create'
+    const url = 'https://startup.webprogramming260.link:4000/auth/create'
 
     // const customHeaders = {
     //    "Content-Type": "application/json",
