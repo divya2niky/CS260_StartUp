@@ -139,3 +139,7 @@ I learned that about handling requests, while giving the curl post I should make
 
 Simon Websocket Notes:
 I learned to create websocket conversation. Sedning messages with send function and registering callback using the onmessage function to receive messages. Using the ws package to create a websocketserver that listens to the same port the browser is using. After the server is detected it calls the server's onConnection callback. The server can then send messages with the send function, and register a callback using the on message function to receive messages. Debugging the client and server were also pretty easy easy to follow. Implementing chat server, websocket server, fowarding messages, keeping connections alive were some of the interesting things I learned. It was a lot to follow but the example codes along with doing the experiment made it a little better. 
+
+
+Startup service learnings:
+Understood the concepts of creating apis using node.js, interacting with mongo database.  Concepts of authentication using secured credentials, navigating to different html pages depending on the api response. learnt the concepts of web socket and how it can be used to provide real-time updates without burdening the server. 

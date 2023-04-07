@@ -63,10 +63,37 @@ db.getCollection('us-counties').aggregate([
             $divide: [{ '$toDouble': '$totaldeaths' },{ '$toDouble': '$totalcases' }]
            }
          }
+      },
+      {
+          $sort: { deathrate: -1 } 
       }
            
             
    ])
+
+   db.getCollection('us-counties').aggregate([
+      {
+          $group: { 
+             _id: "$state", 
+             'totaldeaths': { '$sum' : {'$toInt': '$deaths'}},
+             'totalcases': {'$sum':{'$toInt': '$cases'} },
+            
+                }
+       },
+       {
+          $project: {
+            deathrate : {
+             $divide: [{ '$toDouble': '$totaldeaths' },{ '$toDouble': '$totalcases' }]
+            }
+          }
+       },
+       {
+           $sort: { deathrate: 1 } 
+       }, 
+       { $limit: 1}
+            
+             
+    ])
              
 
   

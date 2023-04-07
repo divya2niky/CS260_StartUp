@@ -64,7 +64,10 @@ function newsignup(){
         // handle the response
         console.log(response.json());
         var rheader = document.getElementById('resultheader');
-        rheader.innerHTML = "User created successfully. Please login"
+        if(response.status == 409)
+          rheader.innerHTML = "User already exists. Please login";
+        else
+          rheader.innerHTML = "User created successfully. Please login"
     })
     .catch(error => {
       console.error(error); // handle the error
