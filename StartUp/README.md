@@ -143,3 +143,6 @@ I learned to create websocket conversation. Sedning messages with send function 
 
 Startup service learnings:
 Understood the concepts of creating apis using node.js, interacting with mongo database.  Concepts of authentication using secured credentials, navigating to different html pages depending on the api response. learnt the concepts of web socket and how it can be used to provide real-time updates without burdening the server. 
+
+Simon React Notes:
+I understood the steps to covertingto react components. First, Copy the HTML over and put it in the return value of the component.Second,The class attribute should be renamed to className so that it doesn't conflict with the JavaScript keyword class.Third, we should delete the header and footer HTML since so they can be in app.jsx. Then copy the JavaScript and I shouldturn the functions into inner functions of the React component. Then create a file for the CSS and use an import statement in the component jsx file and then create React state variables for each of the stateful objects in the component and replacing the DOM query selectors with React state variables and finally moving the state up to parent components as necessary
