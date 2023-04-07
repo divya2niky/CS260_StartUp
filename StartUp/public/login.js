@@ -26,8 +26,10 @@ function login(){
         var rheader = document.getElementById('resultheader');
         if (response.status == 401)
           rheader.innerHTML = "Login Failed"
-        else
+        else {
           rheader.innerHTML = "Login Successful"
+          window.location.assign('http://localhost:3000/dashboard.html')
+        }
     })
     .catch(error => {
       console.error(error); // handle the error
@@ -72,7 +74,7 @@ function newsignup(){
 }
 
 function newQuote(){
-  const quoteurl = "https://andruxnet-random-famous-quotes.p.rapidapi.com/";
+  const quoteurl = "https://api.quotable.io/random";
  
   fetch(quoteurl)
       // ✅ call response.json() here
