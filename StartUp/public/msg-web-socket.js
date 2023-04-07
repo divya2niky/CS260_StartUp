@@ -1,5 +1,7 @@
-var sock = new WebSocket("ws://startup.webprogramming260.link:4000");
-
+//var sock = new WebSocket("ws://startup.webprogramming260.link:4000");
+const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+this.sock = new WebSocket(`${protocol}://${window.location.host}/ws`);
+    
 // sock.onmessage = function(event){
 //     console.log(event);
 //     var logelement = document.getElementById('log');
